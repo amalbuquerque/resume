@@ -1,0 +1,234 @@
+% LaTeX source of my resume
+% =========================
+
+% Commented for easy reuse... ;)
+
+% See the `README.md` file for more info.
+
+% This file is licensed under the CC-NC-ND Creative Commons license.
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+% from https://tex.stackexchange.com/questions/108658/how-do-i-insert-an-underlined-ordinal-indicator-if-the-font-does-not-have-that
+\newcommand{\ula}{\textsuperscript{\b{a}}} % "underlined a in superscript mode"
+\newcommand{\ulo}{\textsuperscript{\b{o}}} % "underlined o in superscript mode"
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{André Albuquerque}{April 4, 1987}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:andre.malbuq.at.gmail.com}{andre.malbuq\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller{+}351-967191550\sbull
+\href{https://github.com/amalbuquerque}{github.com/amalbuquerque}\sbull
+\href{http://linkedin.com/in/amalbuquerque}{linkedin.com/in/amalbuquerque}
+\\
+Av.\thinspace D.\thinspace Afonso Henriques n\ulo 30 4\ulo Esq.\sbull
+2855-721\thinspace Corroios\sbull
+Seixal\sbull
+Portugal
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+\noindent \emph{TODO: Summary geek with roots in the open source movement. Passionately enabling software-related teams to deliver. Creates/\,structures/\,improves processes. Architects and helps to implement future-proof solutions. Coaches both individuals and groups.}
+\\
+\\
+TODO: Biography At the age of seven (1989) Cies wrote his first lines of code in a \acr{LOGO}-like language on an \acr{MSX} (pre-\acr{PC}).  Two years later he attended a conference on an emerging new technology, the Internet, at the Erasmus University from which he would graduate 16 years later (2000) with a degree in Business Computer Science.
+
+After being introduced to the open source movement in 1997, he taught himself a variety of skills including system administration and programming (Bash, Python, Ruby \& \CPP).  By 2002 he got his pet project \acr{KT}urtle ---a zero-entry-barrier programming environment--- included in \acr{KDE}'s \emph{edu} module, and thereby in almost every Linux distribution.
+
+Extensively travelled Europe and Asia after graduating. On return his professional life became a mix of hands-on work in startups and web software agencies, while settling as a husband and father in personal life.
+\end{multicols}
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection
+  {\href{https://onfido.com}{Onfido}}
+  {\textsc{Lisbon, Portugal}} {%
+  \headedsubsection
+    {Software Engineer}
+    {Oct \apo16 -- present}
+    {\bodytext{Software engineer on the Identify team, maintaining our current
+    provider integrations living in our Ruby on Rails monolith platform and
+    creating new integrations/migrating old ones to new microservices in Ruby
+    and Elixir.
+    \begin{itemize}
+      \item Created a \href{https://goo.gl/X5bafF}{new \acr{S3} document storage microservice}, using Elixir
+        processes to implement a caching mechanism and performing the
+        encryption/decryption tasks. Its usage reduced the network bandwidth of
+        our document processing pipeline from 20 Mbps to ~300Kbps).
+      \item The text in the entries may be of any length.
+    \end{itemize}}}
+}
+
+\headedsection
+  {\href{https://www.bportugal.pt/}{Bank of Portugal, Payment Systems Department}}
+  {\textsc{Lisbon, Portugal}} {%
+  \headedsubsection
+    {IT Expert, Advisor}
+    {Sept \apo14 -- Sept \apo16}
+    {\bodytext{Overseer on the Payment Systems Department, advising and
+    providing insights on \acr{IT} subjects: \acr{SWIFT} Continuity, Cyber
+    security in \acr{FMI}s,
+    digital currencies, online payment solutions, development of new information
+    systems. Represented the central bank on the \acr{ECB} Oversight Group assessing
+    the \acr{SEPA} Direct Debit Scheme compliance.
+    \begin{itemize}
+      \item Wrote a comprehensive study on blockchain technology (82 pages), virtual
+        currencies and their possible risks and impact on the financial system.
+    \end{itemize}}}
+}
+
+\headedsection
+  {\href{https://www.bportugal.pt/}{Bank of Portugal, Information Systems and
+  Technology Department}}
+  {\textsc{Lisbon, Portugal}} {%
+  \headedsubsection
+    {Team Leader}
+    {Jan \apo11 -- Sept \apo14}
+    {\bodytext{Team leader on the \acr{IT} Department, performed requirements
+    analysis, improved and maintained some of our legacy systems. Defined the
+    architecture of new projects and routinely supported the deployment of new
+    versions to production environments.
+    \begin{itemize}
+      \item Developed several Web Services interfaces (using an \acr{ESB} as a proxy when needed)
+        within different applications to fetch the \acr{ECB}\apo s machine
+        lists. \acr{XSD}, \acr{WSDL}, \acr{SOAP}, \acr{ASP.NET} Web Services,
+        \acr{TLS}/\,\acr{SSL} certificates.
+      \item Did the maintenance and new developments of the eligible assets
+        database application, a Java web application. Spring Framework
+        (\acr{MVC}, \acr{IoC}, Security -- using LDAP --,
+        \acr{JPA}), Hibernate 3, MySQL, \acr{SVN}.
+      \item Contributed to the requirements analysis, defined the architecture
+        and further development of two \acr{ASP.NET MVC} web applications,
+        allowing the banks to report information via extranet and its subsequent
+        analysis using an intranet web app. \acr{ASP.NET MVC 3}, \acr{NUnit},
+        Microsoft \acr{SQL} Server, jQuery, \acr{TFS}.
+      \item Did the maintenance, new developments (as well as support and
+        on-call tasks) of our most critical system, \acr{TARGET2-PT}, our
+        integration with the European real-time gross settlement system.
+        \acr{ASP.NET} Web Forms, Microsoft \acr{SQL} Server, Sybase, WebSphere
+        \acr{MQ}, SourceSafe.
+    \end{itemize}}}
+}
+
+
+\headedsection
+  {\href{https://www.boldint.com/}{BOLD International}}
+  {\textsc{Lisbon, Portugal}} {%
+  \headedsubsection
+    {IT Consultant}
+    {Oct \apo10 -- Jan \apo11}
+    {\bodytext{Developed a web application to support and enhance the Technical
+    Support Front Office of the main Portuguese Telco. ExtJS, Spring Framework
+    (\acr{MVC}, \acr{IoC}, Security), Java \acr{EE} (\acr{EJB} 3.0, HornetQ,
+    \acr{JPA}), Oracle \acr{DB}, JBoss 5.1, \acr{BPM}.
+    }}
+}
+
+
+\headedsection
+  {\href{https://www.everis.com/global/en}{everis}}
+  {\textsc{Lisbon, Portugal}} {%
+  \headedsubsection
+    {Consultant}
+    {Sept \apo09 -- Sept \apo10}
+    {\bodytext{Performed the functional certification of the software developed
+    in-house in a medium-sized Portuguese bank. \acr{AS}/400 (\acr{IBM} System
+    i), \acr{DB2}.
+    }}
+}
+
+
+\vspace{-0.2em}
+\begin{center}
+  \emph{\small Please refer to
+  \href{http://www.linkedin.com/in/amalbuquerque}{André's LinkedIn profile} for a more complete list of work experience along with recommendations.}
+\end{center}
+
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{https://tecnico.ulisboa.pt/en}{Instituto Superior Técnico \textemdash Univ.
+  de Lisboa}}
+  {\textsc{Lisbon, Portugal}} {%
+  \headedsubsection
+    {TODO: BSc in Business Computer Science \textnormal{~(\acr{CS}~\,\&\,Economics)}}
+    {2004 -- 2007}
+    {\bodytext{Main projects on the economics of open source and the semantic web (\acr{RDF}/\acr{RDFS}, \acr{OWL} \& \acr{SPARQL}).}}
+}
+
+\headedsection
+  {\href{http://www.tudelft.nl/en}{Technical University Delft}}
+  {\textsc{Delft, The Netherlands}} {%
+  \headedsubsection
+    {Industrial Design Engineering \textnormal{\textit{~(discontinued)}}}
+    {2001 -- 2002} {}
+}
+
+\headedsection
+  {\href{http://www.libanonlyceum.nl}{Libanon Lyceum}}
+  {\textsc{Rotterdam, The Netherlands}} {%
+  \headedsubsection
+    {VWO \textnormal{~(Pre-University Secondary Education)}}
+    {1994 -- 2000} {}
+}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Technical expertise:}
+  {Leading and recruiting teams of software engineers.  Big fan of Agile methodologies, continuous delivery and functional programming.  Enjoys writing Ruby/\nsp Python/\nsp Java/\nsp \CPP~and Haskell.  Solid knowledge of the full web technology stack.  Able to architect \textit{and} implement distributed/\acr{HA} systems.  Strong Linux administration skills (e.g.\ Bash scripting, Apache/\acr{NGINX}, Postgres/My/No\acr{SQL}, ElasticSearch).  Well experienced with virtualization/containerization (Docker/Kubernetes, \acr{KVM}, Xen and several \acr{AWS} solutions) and DevOps (Puppet).  Emacs user.}
+
+\vspace{0.5em}
+\inlineheadsection
+  {Natural languages:}
+  {Dutch \emph{(mother tongue)}, English \emph{(full professional proficiency)}, German \emph{(limited working proficiency)}, French \emph{(elementary proficiency)} and Mandarin Chinese \emph{(beginner)}.}
+
+
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{Interests}
+
+\inlineheadsection
+  {Non-exhaustive and in alphabetical order:}
+  {art, Buddhism, cryptography, functional programming, Go (board game), history, music (from classical and jazz to Berlin-techno), \acr{NLP}, permaculture, philosophy, rock climbing, startups, travel, typography (e.g.\ graphic design, \LaTeX), \acr{UX}-design and vegan cuisine.}
+
+
+\end{document}
+
