@@ -41,8 +41,9 @@
 % \href well..
 % \\ breaks the line into a new paragraph
 \noindent\href{mailto:andre.malbuq.at.gmail.com}{andre.malbuq\mbox{}@\mbox{}gmail.com}\sbull
-\textsmaller{+}351-967191550\sbull
-\href{https://github.com/amalbuquerque}{github.com/amalbuquerque}\sbull
+\textsmaller{+}351-967191550
+\\
+\noindent\href{https://github.com/amalbuquerque}{github.com/amalbuquerque}\sbull
 \href{http://linkedin.com/in/amalbuquerque}{linkedin.com/in/amalbuquerque}
 \\
 Av.\thinspace D.\thinspace Afonso Henriques n\ulo 30 4\ulo Esq.\sbull
@@ -56,14 +57,30 @@ Portugal
 
 \vspace{-1.3em}  % some vertical spacing
 \begin{multicols}{2}  % open a multicolumn environment
-\noindent \emph{TODO: Summary geek with roots in the open source movement. Passionately enabling software-related teams to deliver. Creates/\,structures/\,improves processes. Architects and helps to implement future-proof solutions. Coaches both individuals and groups.}
+\noindent \emph{Geek at heart, thoroughly enjoys learning new skills and writing
+  quality code to solve interesting challenges. Likes to think about software
+  engineering as a collaborative process to solve specific problems in a
+  reliable and future-proof way.}
 \\
 \\
-TODO: Biography At the age of seven (1989) Cies wrote his first lines of code in a \acr{LOGO}-like language on an \acr{MSX} (pre-\acr{PC}).  Two years later he attended a conference on an emerging new technology, the Internet, at the Erasmus University from which he would graduate 16 years later (2000) with a degree in Business Computer Science.
+Had his first contact with computers, a ZX Spectrum+, at the age of three
+(1990) and wrote his first lines of code to change the GORILLA.BAS game bundle
+with MS-DOS 5, on the 486 computer he got as a birthday present at the age of
+nine. Knew from an early age that he wanted to be a computer engineer,
+graduated at the age of 22 with a MSc degree in Information Systems and Computer
+Engineering from the best engineering school in Portugal.
 
-After being introduced to the open source movement in 1997, he taught himself a variety of skills including system administration and programming (Bash, Python, Ruby \& \CPP).  By 2002 he got his pet project \acr{KT}urtle ---a zero-entry-barrier programming environment--- included in \acr{KDE}'s \emph{edu} module, and thereby in almost every Linux distribution.
+He is a software engineer at Onfido, after working in the banking industry for
+seven years. During this banking detour he obtained a master's degree in
+economics. He is currently developing Onfido's microservices using Elixir,
+Ruby and Python, learning every day about how applications can thrive
+if the correct tools and sound coding practices are applied from the very
+beginning.
 
-Extensively travelled Europe and Asia after graduating. On return his professional life became a mix of hands-on work in startups and web software agencies, while settling as a husband and father in personal life.
+He recently co-authored a book on Elixir,
+\href{https://www.packtpub.com/application-development/mastering-elixir}{Mastering
+Elixir}, that takes the reader in a journey to develop and deploy on the cloud
+a Dropbox-like application.
 \end{multicols}
 
 
@@ -71,22 +88,38 @@ Extensively travelled Europe and Asia after graduating. On return his profession
 
 \roottitle{Experience}
 
+
 \headedsection
   {\href{https://onfido.com}{Onfido}}
   {\textsc{Lisbon, Portugal}} {%
   \headedsubsection
+    {Senior Software Engineer}
+    {Aug \apo18 -- present}
+    {\bodytext{Software engineer on the Distributed Identity team,
+    exploring new ways of providing Identity-based services to our customers.
+    Analysing different identity solutions and implementing prototypes to better understand the technologies under scrutiny.
+    }}
+
+  \headedsubsection
     {Software Engineer}
-    {Oct \apo16 -- present}
-    {\bodytext{Software engineer on the Identify team, maintaining our current
-    provider integrations living in our Ruby on Rails monolith platform and
-    creating new integrations/migrating old ones to new microservices in Ruby
-    and Elixir.
+    {Oct \apo16 -- Aug \apo18}
+    {\bodytext{Software engineer on the Identify and later Biometrics team,
+    maintaining our current provider integrations living in our Ruby on Rails
+    monolith platform and creating new integrations/migrating old ones to new
+    microservices in Ruby and Elixir.
     \begin{itemize}
-      \item Created a \href{https://goo.gl/X5bafF}{new \acr{S3} document storage microservice}, using Elixir
-        processes to implement a caching mechanism and performing the
-        encryption/decryption tasks. Its usage reduced the network bandwidth of
-        our document processing pipeline from 20 Mbps to ~300Kbps).
-      \item The text in the entries may be of any length.
+      \item Created a \href{https://goo.gl/X5bafF}{new \acr{S3} document storage
+        microservice}, using Elixir processes to implement a caching mechanism
+        and performing the encryption/decryption tasks. Its usage reduced the
+        network bandwidth of our document processing pipeline from 20 Mbps to
+        ~300Kbps).
+      \item Implemented the mechanism in Elixir that calls all the algorithms
+        developed in-house and our external providers in parallel and later
+        aggregates the different results.
+      \item Extracted several provider integrations from our monolith to new
+        microservices written in Ruby.
+      \item Used an AWS API Gateway + Lambda to create a secure callback
+        mechanism, allowing an external provider to asynchronously reply to us.
     \end{itemize}}}
 }
 
@@ -123,7 +156,7 @@ Extensively travelled Europe and Asia after graduating. On return his profession
       \item Developed several Web Services interfaces (using an \acr{ESB} as a proxy when needed)
         within different applications to fetch the \acr{ECB}\apo s machine
         lists. \acr{XSD}, \acr{WSDL}, \acr{SOAP}, \acr{ASP.NET} Web Services,
-        \acr{TLS}/\,\acr{SSL} certificates.
+        \acr{TLS}/\nsp\acr{SSL} certificates.
       \item Did the maintenance and new developments of the eligible assets
         database application, a Java web application. Spring Framework
         (\acr{MVC}, \acr{IoC}, Security -- using LDAP --,
@@ -181,31 +214,44 @@ Extensively travelled Europe and Asia after graduating. On return his profession
 \roottitle{Education}
 
 \headedsection
+  {\href{https://www.iseg.ulisboa.pt/?locale=en}{School of Economics \&\
+  Management \textemdash Univ.
+  de Lisboa}}
+  {\textsc{Lisbon, Portugal}} {%
+  \headedsubsection
+    {MSc in Monetary and Financial Economics}
+    {Sept \apo14 -- Oct \apo16}
+    {\bodytext{Master thesis on the determinants of sovereign ratings using
+    Stata. You can find a working paper based on my dissertation
+    \href{http://hdl.handle.net/10400.5/13134}{here}.}}
+    {\bodytext{Coursework: Macroeconomics; Microeconomics; Econometrics;
+    Monetary Policy; Behavioral Finance; Public Finance; Macroeconomics and
+    Monetary Theory; Financial Economics; Financial Markets.
+    }}
+}
+
+\headedsection
   {\href{https://tecnico.ulisboa.pt/en}{Instituto Superior Técnico \textemdash Univ.
   de Lisboa}}
   {\textsc{Lisbon, Portugal}} {%
   \headedsubsection
-    {TODO: BSc in Business Computer Science \textnormal{~(\acr{CS}~\,\&\,Economics)}}
-    {2004 -- 2007}
-    {\bodytext{Main projects on the economics of open source and the semantic web (\acr{RDF}/\acr{RDFS}, \acr{OWL} \& \acr{SPARQL}).}}
-}
+    {MSc in Information Systems and Computer Engineering, 15/\,20}
+    {Sept \apo07 -- Oct \apo09}
+    {\bodytext{Major in Distributed
+    Systems, minor in Software Engineering.}}
+    {\bodytext{Coursework: Software Architecture;
+    Software Quality; Virtual Execution Environments; Mobile Computing; Network
+    and Computers Security; Parallel and Distributed Computing.
+    }}
 
-\headedsection
-  {\href{http://www.tudelft.nl/en}{Technical University Delft}}
-  {\textsc{Delft, The Netherlands}} {%
   \headedsubsection
-    {Industrial Design Engineering \textnormal{\textit{~(discontinued)}}}
-    {2001 -- 2002} {}
+    {BSc in Information Systems and Computer Engineering, 15/\,20}
+    {Sept \apo04 -- Jul \apo07}
+    {\bodytext{Coursework: Software Engineering; Operating Systems; Databases;
+    Computer Architecture; Analysis and Synthesis of Algorithms; Artificial
+    Intelligence; Compilers; Computer Networks; Physics; Calculus; Algebra.
+    }}
 }
-
-\headedsection
-  {\href{http://www.libanonlyceum.nl}{Libanon Lyceum}}
-  {\textsc{Rotterdam, The Netherlands}} {%
-  \headedsubsection
-    {VWO \textnormal{~(Pre-University Secondary Education)}}
-    {1994 -- 2000} {}
-}
-
 
 \spacedhrule{0.5em}{-0.4em}
 
@@ -213,12 +259,16 @@ Extensively travelled Europe and Asia after graduating. On return his profession
 
 \inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
   {Technical expertise:}
-  {Leading and recruiting teams of software engineers.  Big fan of Agile methodologies, continuous delivery and functional programming.  Enjoys writing Ruby/\nsp Python/\nsp Java/\nsp \CPP~and Haskell.  Solid knowledge of the full web technology stack.  Able to architect \textit{and} implement distributed/\acr{HA} systems.  Strong Linux administration skills (e.g.\ Bash scripting, Apache/\acr{NGINX}, Postgres/My/No\acr{SQL}, ElasticSearch).  Well experienced with virtualization/containerization (Docker/Kubernetes, \acr{KVM}, Xen and several \acr{AWS} solutions) and DevOps (Puppet).  Emacs user.}
+  {Appreciates to work with Agile methodologies, using continuous delivery whenever
+  possible (knowledgeable about Jenkins and Travis CI). Likes functional programming, enjoys working with Elixir/\nsp Ruby/\nsp Python/\nsp C$^\sharp$ and Node.js.
+  Experienced with Phoenix and Rails web frameworks,
+  virtualization/containerization (Docker, Kubernetes and several \acr{AWS}
+  solutions) and DevOps (Terraform). Linux and vim user. Loves Git.}
 
 \vspace{0.5em}
 \inlineheadsection
   {Natural languages:}
-  {Dutch \emph{(mother tongue)}, English \emph{(full professional proficiency)}, German \emph{(limited working proficiency)}, French \emph{(elementary proficiency)} and Mandarin Chinese \emph{(beginner)}.}
+  {Portuguese \emph{(mother tongue)} and English \emph{(full professional proficiency)}.}
 
 
 \spacedhrule{1.6em}{-0.4em}
@@ -227,8 +277,8 @@ Extensively travelled Europe and Asia after graduating. On return his profession
 
 \inlineheadsection
   {Non-exhaustive and in alphabetical order:}
-  {art, Buddhism, cryptography, functional programming, Go (board game), history, music (from classical and jazz to Berlin-techno), \acr{NLP}, permaculture, philosophy, rock climbing, startups, travel, typography (e.g.\ graphic design, \LaTeX), \acr{UX}-design and vegan cuisine.}
-
+  {basketball, behavioral economics, blockchain applications, censorship resistant
+systems, custom and vintage keyboards, gymnastics, music, philosophy, privacy in the age of internet, running, travel, vim, virtual currencies.}
 
 \end{document}
 
