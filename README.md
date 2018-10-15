@@ -1,6 +1,6 @@
 # My Latex resume
 
- * Is a [nicely typeset 2-page PDF](https://rawgithub.com/cies/resume/master/cies-breijs-resume.pdf) (click the link to download mine)
+ * Is a [nicely typeset 2-page PDF](https://github.com/amalbuquerque/resume/raw/master/andre-albuquerque.pdf) (click the link to download mine)
  * Compiles with or without installing software (read more below).
  * Might well be a starting point for your very own Latex resume.
 
@@ -39,7 +39,7 @@ can be used to compile this resume.
 To get this resume compiled into a PDF with ShareLatex:
 
   1. Go to [sharelatex.com](http://www.sharelatex.com) and create first an account and then a project.
-  2. In your new project replace the content of the `main.tex` file with the LaTeX source of resume's content (`cies-breijs-resume.tex` in this case) from Github.
+  2. In your new project replace the content of the `main.tex` file with the LaTeX source of resume's content (`andre-albuquerque.tex` in this case) from Github.
   3. In your new project create a new file `resume.sty` and copy-paste
      the content of the same named file from the Github repo.
   4. Finally hit the "Compile" button to view and/or download the resulting PDF.
@@ -100,6 +100,6 @@ command with `./pdflatex`.
 
 Feel free to use, copy, fork, share, study and/or modify it because the LaTeX source code of the `resume.sty` file is [MIT](http://en.wikipedia.org/wiki/MIT_License) licensed.
 
-The text of my resume in the `cies-breijs-resume.tex` file is [CC-NC-ND](http://creativecommons.org/licenses/by-nc-nd/3.0/) licensed.
+The text of my resume in the `andre-albuquerque.tex` file is [CC-NC-ND](http://creativecommons.org/licenses/by-nc-nd/3.0/) licensed.
 
 
