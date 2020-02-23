@@ -88,16 +88,45 @@ a Dropbox-like application.
 
 \roottitle{Experience}
 
-
 \headedsection
   {\href{https://onfido.com}{Onfido}}
   {\textsc{Lisbon, Portugal}} {%
+  
+  \headedsubsection
+    {Senior Software Engineer - Team Lead}
+    {Aug \apo19 -- present}
+    {\bodytext{Team Lead of the Operations Tech team,
+    whose mission is to improve all internal systems to better enable the
+    business for the rapid growth phase we're experiencing.
+    \begin{itemize}
+      \item Started with a complete revamp of the billing system, by removing the
+        existing billing logic from our Rails monolith and creating two new
+        Elixir microservices. The billing system is now event-based and region agnostic
+        using Amazon's SNS and SQS infrastructure.
+      \item Deliver a new internal system for account management, replacing the
+        legacy experience and automating all the information queries by
+        interfacing with Salesforce.
+      \item Use this opportunity to refactor a big chunk of the Rails monolith,
+        improving the user experience of our internal users and significantly
+        reducing tech debt.
+    \end{itemize}
+    }}
+    
   \headedsubsection
     {Senior Software Engineer}
-    {Aug \apo18 -- present}
+    {Aug \apo18 -- Aug \apo19}
     {\bodytext{Software engineer on the Distributed Identity team,
     exploring new ways of providing Identity-based services to our customers.
-    Analysing different identity solutions and implementing prototypes to better understand the technologies under scrutiny.
+    Analysing different identity solutions and implementing prototypes to better
+    understand the technologies under scrutiny.
+    \begin{itemize}
+      \item Implemented an identity credentialing system based on
+        \href{https://www.uport.me}{Uport} solution, that integrated
+        with Onfido identity verification platform.
+      \item Implemented an identity credentialing system using
+        \href{https://www.evernym.com}{Evernym}, that integrated
+        with Onfido identity verification platform.
+    \end{itemize}
     }}
 
   \headedsubsection
@@ -112,7 +141,7 @@ a Dropbox-like application.
         microservice}, using Elixir processes to implement a caching mechanism
         and performing the encryption/decryption tasks. Its usage reduced the
         network bandwidth of our document processing pipeline from 20 Mbps to
-        ~300Kbps).
+        ~300Kbps.
       \item Implemented the mechanism in Elixir that calls all the algorithms
         developed in-house and our external providers in parallel and later
         aggregates the different results.
@@ -260,7 +289,7 @@ a Dropbox-like application.
 \inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
   {Technical expertise:}
   {Appreciates to work with Agile methodologies, using continuous delivery whenever
-  possible (knowledgeable about Jenkins and Travis CI). Likes functional programming, enjoys working with Elixir/\nsp Ruby/\nsp Python/\nsp C$^\sharp$ and Node.js.
+  possible (knowledgeable about Gitlab CI, Jenkins and Travis CI). Likes functional programming, enjoys working with Elixir/\nsp Ruby/\nsp Python/\nsp C$^\sharp$ and Node.js.
   Experienced with Phoenix and Rails web frameworks,
   virtualization/containerization (Docker, Kubernetes and several \acr{AWS}
   solutions) and DevOps (Terraform). Linux and vim user. Loves Git.}
@@ -281,4 +310,3 @@ a Dropbox-like application.
 systems, custom and vintage keyboards, gymnastics, music, philosophy, privacy in the age of internet, running, travel, vim, virtual currencies.}
 
 \end{document}
-
